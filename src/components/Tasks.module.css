@@ -1,0 +1,77 @@
+.tasks {
+  max-width: 736px;
+
+  padding: 0 1rem;
+  margin: 4rem auto 0;
+}
+
+.tasks header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tasks header strong:first-of-type{
+  color: var(--blue-500);
+}
+
+.tasks header strong:last-of-type{
+  color: var(--purple-500);
+}
+
+.tasks header strong span {
+  margin-left: .5rem;
+  padding: .2rem .5rem;
+
+  font-size: .75rem;
+  border-radius: 16px;
+  color: var(--white);
+  background: var(--gray-500);
+}
+
+.tasks main {
+  margin-top: 1.5rem;
+
+  border-top: 1px solid var(--gray-500);
+  border-radius: 8px;
+}
+
+.taskBoxEmpty {
+  padding: 64px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.taskBoxEmpty > strong {
+  margin-top: 1rem;
+}
+
+.taskBox {
+  padding: 1rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+
+  border-radius: 8px;
+  background: var(--gray-500);
+  color: var(--gray-100);
+}
+
+.taskBox + .taskBox {
+  margin-top: .75rem;
+}
+
+.taskBox img {
+  cursor: pointer;  
+}
+
+.taskBox img:last-of-type {
+  margin-left: auto;
+}
+
+.completed {
+  color: var(--gray-300);
+  -webkit-text-decoration-line: line-through; /* Safari */
+  text-decoration-line: line-through; 
+}

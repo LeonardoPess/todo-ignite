@@ -1,0 +1,50 @@
+.newTask {
+  max-width: 736px;
+
+  padding: 0 1rem;
+  margin: 0 auto;
+  margin-top: -22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+}
+
+.newTask input {
+  width: 100%;
+  height: 54px;
+
+  padding: 1rem;
+
+  color: var(--white);
+  border-radius: 8px;
+  background: var(--gray-500);
+  border: none;
+}
+
+.newTask button {
+  height: 54px;
+
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+
+  font-weight: bold;
+  color: white;
+  background: var(--blue-600);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+
+  transition: background-color .2s;
+}
+
+.newTask button:hover {
+  background: var(--blue-500);
+}
+
+.newTask button:disabled {
+  opacity: .7;
+  cursor: not-allowed;
+}
